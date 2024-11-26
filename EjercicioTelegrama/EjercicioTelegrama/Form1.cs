@@ -29,7 +29,7 @@ namespace EjercicioTelegrama
                 textoTelegrama = txtTelegrama.Text;
 
                 // telegrama urgente?
-                tipoTelegrama = chkUrgente.Checked ? 'u' : 'o';
+                tipoTelegrama = cbUrgente.Checked ? 'u' : 'o';
 
                 //Obtengo el número de palabras que forma el telegrama
                 numPalabras = textoTelegrama.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
@@ -71,6 +71,11 @@ namespace EjercicioTelegrama
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
         {
 
         }
